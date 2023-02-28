@@ -1,6 +1,6 @@
 ## Joint Salient Object Detection and Camouflaged Object Detection via Uncertainty-aware Learning
 
-![]https://github.com/baneitixiaomai/joint_sod_cod/blob/master/overview.pdf)  
+![](https://github.com/baneitixiaomai/joint_sod_cod/blob/master/overview.png)  
 ## Set up
 - pip install -r requirements.txt  
 
