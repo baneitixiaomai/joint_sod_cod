@@ -5,7 +5,7 @@
 - pip install -r requirements.txt  
 
 ## Train Model
-- Prepare data for training (We provided the related data in:[train_data](). Please download it and put it in the '/train_data/' folder)    
+- Prepare data for training (We provided the related data in:[[train_data]](). Please download it and put it in the '/train_data/' folder)    
 - Run train.py   
 
 ##  Test Model
