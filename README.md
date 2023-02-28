@@ -6,9 +6,9 @@
 
 ## Train Model
 - Prepare data for training (We provided the related data in:[[train_data]](). Please download it and put it in the '/train_data/' folder) 
--- 'duts+wmae' means the augmented SOD training set
--- 'COD_train'  means the COD training dataset
--- 'JPEGImages_select' means the selected PASCAL VOC dataset
+  -- 'duts+wmae' means the augmented SOD training set  
+  -- 'COD_train'  means the COD training dataset  
+  -- 'JPEGImages_select' means the selected PASCAL VOC dataset  
 - Run train.py   
 
 ##  Test Model
