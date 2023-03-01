@@ -15,8 +15,8 @@
 - Run ./test.py  
 
 ## Trained model:
-Please download the trained model and put it in "./models/": [[Google_Drive]](https://drive.google.com/drive/folders/1PYb-1EKooiXW2KZ_IWwVRAzCYKhmcSn8?usp=sharing);
+Please download the trained model and put it in "./models/": [[Google_Drive]](https://drive.google.com/drive/folders/1-2rk7k1GeeeWQvQOmJeecm9E6k0rz2fH?usp=sharing);
 
 ##  Prediction Maps
-Results of our model on four benchmark datasets for COD (CAMO, CHAMELEON, COD10K, NC4K), and six benchmark datasets (DUTS, ECSSD, DUT, HKU-IS, PASCAL, SOD ) for SOD, which can be found: [[Google_Drive]](https://drive.google.com/file/d/1q8Ai6U0O61R4b1wDPeF1h2UN42X9W0KJ/view?usp=sharing)
+Results of our model on four benchmark datasets for COD (CAMO, CHAMELEON, COD10K, NC4K), and six benchmark datasets (DUTS, ECSSD, DUT, HKU-IS, PASCAL, SOD ) for SOD, which can be found: [[Google_Drive]]()
  
