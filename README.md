@@ -13,6 +13,7 @@
 
 ##  Test and Evaluate Model
 - Run ./test.py  
+# Thanks Yuxin Mao for providing the Evaluation code (https://github.com/fupiao1998/SOD-Eval)
 
 ## Trained model:
 Please download the trained model and put it in "./models/": [[Google_Drive]](https://drive.google.com/drive/folders/1-2rk7k1GeeeWQvQOmJeecm9E6k0rz2fH?usp=sharing);
