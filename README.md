@@ -13,7 +13,7 @@
 
 ##  Test and Evaluate Model
 - Run ./test.py  
-### Thanks Yuxin Mao for providing the Evaluation code (https://github.com/fupiao1998/SOD-Eval)
+
 
 ## Trained model:
 Please download the trained model and put it in "./models/": [[Google_Drive]](https://drive.google.com/drive/folders/1-2rk7k1GeeeWQvQOmJeecm9E6k0rz2fH?usp=sharing);
@@ -21,3 +21,4 @@ Please download the trained model and put it in "./models/": [[Google_Drive]](ht
 ##  Prediction Maps
 Results of our model on four benchmark datasets (CAMO, CHAMELEON, COD10K, NC4K) for COD:[[Google_Drive]](https://drive.google.com/file/d/1hPSPEZHBCYYti3Sw_YVau1teE1lePmH8/view?usp=sharing); and six benchmark datasets (DUTS, ECSSD, DUT, HKU-IS, PASCAL, SOD ) for SOD: [[Google_Drive]](https://drive.google.com/file/d/1kMBp0ZUyxJUCtZzhoVhXp3B_fA9WvL-x/view?usp=sharing)
  
+## Thanks Yuxin Mao for providing the Evaluation code [link](https://github.com/fupiao1998/SOD-Eval)
