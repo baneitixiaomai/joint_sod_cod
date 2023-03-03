@@ -11,7 +11,7 @@
   - 'JPEGImages_select' means the selected PASCAL VOC dataset  
 - Run train.py   
 
-##  Test Model
+##  Test and Evaluate Model
 - Run ./test.py  
 
 ## Trained model:
