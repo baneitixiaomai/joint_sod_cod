@@ -18,5 +18,5 @@
 Please download the trained model and put it in "./models/": [[Google_Drive]](https://drive.google.com/drive/folders/1-2rk7k1GeeeWQvQOmJeecm9E6k0rz2fH?usp=sharing);
 
 ##  Prediction Maps
-Results of our model on four benchmark datasets for COD (CAMO, CHAMELEON, COD10K, NC4K), and six benchmark datasets (DUTS, ECSSD, DUT, HKU-IS, PASCAL, SOD ) for SOD, which can be found: [[Google_Drive]]()
+Results of our model on four benchmark datasets (CAMO, CHAMELEON, COD10K, NC4K) for COD, which can be found:[[Google_Drive]](https://drive.google.com/file/d/1hPSPEZHBCYYti3Sw_YVau1teE1lePmH8/view?usp=sharing); and six benchmark datasets (DUTS, ECSSD, DUT, HKU-IS, PASCAL, SOD ) for SOD, which can be found: [[Google_Drive]](https://drive.google.com/file/d/1kMBp0ZUyxJUCtZzhoVhXp3B_fA9WvL-x/view?usp=sharing)
  
