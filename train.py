@@ -30,7 +30,7 @@ parser.add_argument('--beta_feat', type=float, default=0.5,help='beta of Adam fo
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
 parser.add_argument('--latent_fq', type=int, default=1, help='contrastive learning latent frequency')  
 parser.add_argument('--sadw', type=float, default=1.0, help='adversial learning sod weigth')  
-parser.add_argument('--cadw', type=float, default=.01, help='adversial learning cod weigth')  
+parser.add_argument('--cadw', type=float, default=1.0, help='adversial learning cod weigth')  
 
 opt = parser.parse_args()
 
