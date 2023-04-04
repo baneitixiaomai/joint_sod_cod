@@ -13,10 +13,10 @@ from eval_func import *
 parser = argparse.ArgumentParser()
 parser.add_argument('--train_iters', type=int, default=30000, help='epoch number')
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
-parser.add_argument('--cod_dataset_path', type=str, default='/COD_test/', help='cod image root')
-parser.add_argument('--sod_dataset_path', type=str, default='/SOD_test/datasets/IMG/', help='sod image root')
-parser.add_argument('--cod_gt_dir', type=str, default='/COD/COD_test/', help='cod gt root')
-parser.add_argument('--gt_dir', type=str, default='/SOD_test/datasets/', help='sod gt root')
+parser.add_argument('--cod_dataset_path', type=str, default='./test_data/COD_test/', help='cod image root')
+parser.add_argument('--sod_dataset_path', type=str, default='./test_data/SOD_test/datasets/IMG/', help='sod image root')
+parser.add_argument('--cod_gt_dir', type=str, default='./test_data/COD_test/', help='cod gt root')
+parser.add_argument('--gt_dir', type=str, default='./test_data/SOD_test/datasets/', help='sod gt root')
 opt = parser.parse_args()
 
 
