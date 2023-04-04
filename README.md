@@ -2,7 +2,7 @@
 
 ![](https://github.com/baneitixiaomai/joint_sod_cod/blob/master/overview.png) 
 
-This code is the journal extension version of: [* Uncertainty-aware Joint Salient Object and Camouflaged Object Detection *](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Uncertainty-Aware_Joint_Salient_Object_and_Camouflaged_Object_Detection_CVPR_2021_paper.pdf) (CVPR2021)
+This code is the journal extension version of: *[ Uncertainty-aware Joint Salient Object and Camouflaged Object Detection ](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Uncertainty-Aware_Joint_Salient_Object_and_Camouflaged_Object_Detection_CVPR_2021_paper.pdf)* (CVPR2021)
 
 ## Train the model
 ### Set up
