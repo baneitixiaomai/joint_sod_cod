@@ -1,6 +1,8 @@
 # Joint Salient Object Detection and Camouflaged Object Detection via Uncertainty-aware Learning
 
 ![](https://github.com/baneitixiaomai/joint_sod_cod/blob/master/overview.png) 
+
+This code is the journal extension version of: Uncertainty-aware Joint Salient Object and Camouflaged Object Detection  (CVPR2021)
 ## Train the model
 ### Set up
 ```ruby
