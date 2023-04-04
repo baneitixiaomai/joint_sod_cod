@@ -10,12 +10,14 @@
   - 'COD_train'  means the COD training dataset  
   - 'JPEGImages_select' means the selected PASCAL VOC dataset  
 ```ruby
-Run train.py  
+python train.py  
 ```
 ##  Test and Evaluate Model
 - Prepare data for testing (We provided the related SOD and COD test image and ground-truth in:[[Google_Drive]](https://drive.google.com/drive/folders/1-yRpkCm2d7qKjW01tGCfmbHL5zqMeBI1). Please download it and put it in the '/test_data/' folder)  
 
-- Run ./test.py  
+```ruby
+python test.py   
+```
 
 ## Trained model:
 Please download the trained model and put it in "./models/": [[Google_Drive]](https://drive.google.com/drive/folders/1-2rk7k1GeeeWQvQOmJeecm9E6k0rz2fH?usp=sharing);
