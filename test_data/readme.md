@@ -1,0 +1,1 @@
+- Prepare data for testing (We provided the related SOD and COD test image and ground-truth in:[[Google_Drive]](https://drive.google.com/drive/folders/1-yRpkCm2d7qKjW01tGCfmbHL5zqMeBI1). Please download it and put it in the '/test_data/' folder)  
