@@ -10,7 +10,7 @@ This code is the journal extension version of: *[ Uncertainty-aware Joint Salien
 pip install -r requirements.txt  
 ```
 ### Train Model
-- Prepare data for training (We provided the related data in:[[Google_Drive]](https://drive.google.com/drive/folders/1J_B7mNEwB0ryzngd8JyZdllfFNgkiFdh?usp=sharing). Please download it and put it in the '/train_data/' folder)   
+- Prepare data for training (We provided the related data in:[[Google_Drive]](https://drive.google.com/drive/folders/1J_B7mNEwB0ryzngd8JyZdllfFNgkiFdh?usp=sharing). Please download it and put it in the './train_data/' folder)   
   - 'duts+wmae' means the augmented SOD training set  
   - 'COD_train'  means the COD training dataset  
   - 'JPEGImages_select' means the selected PASCAL VOC dataset  
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python train.py  
 ```
 ###  Test and Evaluate Model
-- Prepare data for testing (We provided the related SOD and COD test image and ground-truth in:[[Google_Drive]](https://drive.google.com/drive/folders/1-yRpkCm2d7qKjW01tGCfmbHL5zqMeBI1). Please download it and put it in the '/test_data/' folder)  
+- Prepare data for testing (We provided the related SOD and COD test image and ground-truth in:[[Google_Drive]](https://drive.google.com/drive/folders/1-yRpkCm2d7qKjW01tGCfmbHL5zqMeBI1). Please download it and put it in the './test_data/' folder)  
 
 ```ruby
 python test.py   
