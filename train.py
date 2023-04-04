@@ -18,16 +18,11 @@ parser.add_argument('--lr_dis', type=float, default=2e-5, help='learning rate of
 parser.add_argument('--lr_feat', type=float, default=1.2e-5, help='learning rate of contrastive learning')
 parser.add_argument('--batchsize', type=int, default=22, help='training batch size')
 parser.add_argument('--trainsize', type=int, default=352, help='training dataset size')
-parser.add_argument('--clip', type=float, default=0.5, help='gradient clipping margin')
-parser.add_argument('--decay_rate', type=float, default=0.1, help='decay rate of learning rate')
-parser.add_argument('--decay_epoch', type=int, default=20, help='every n epochs decay learning rate')
 parser.add_argument('--beta1_gen', type=float, default=0.5,help='beta of Adam for generator')
 parser.add_argument('--beta1_dis', type=float, default=0.5,help='beta of Adam for descriptor')
-parser.add_argument('--latent_dim', type=int, default=700, help='latent feature size')
 parser.add_argument('--reduced_dim', type=int, default=32, help='reduced dimension size')
 parser.add_argument('--cos_weight', type=float, default=5, help='weight of the cosine loss')
 parser.add_argument('--beta_feat', type=float, default=0.5,help='beta of Adam for generator')
-parser.add_argument('--testsize', type=int, default=352, help='testing size')
 parser.add_argument('--latent_fq', type=int, default=1, help='contrastive learning latent frequency')  
 parser.add_argument('--sadw', type=float, default=1.0, help='adversial learning sod weigth')  
 parser.add_argument('--cadw', type=float, default=1.0, help='adversial learning cod weigth')  
@@ -68,23 +63,19 @@ dis_params_cod = dis_model_cod.parameters()
 dis_optimizer_cod = torch.optim.Adam(dis_params_cod, opt.lr_dis, betas=[opt.beta1_dis, 0.999])
 dis_model_scheduler_cod = lr_scheduler.StepLR(dis_optimizer_cod,step_size=2000,gamma = 0.8)  # 0313
 
-latent_feat=Contrastive_module(opt.reduced_dim, opt.latent_dim)
+latent_feat=Contrastive_module(opt.reduced_dim)
 latent_feat.cuda()
 latent_feat.eval()
 latent_feat_optimizer=torch.optim.Adam(latent_feat.parameters(), opt.lr_feat, betas=[opt.beta_feat, 0.999])
 latent_feat_scheduler = lr_scheduler.StepLR(latent_feat_optimizer,step_size=2000,gamma = 0.95)
 
-val_name='JPEGImages_select'
-val_img_root = '/train_data/'+ val_name + '/'
+val_img_root = './train_data/JPEGImages_select/'
 
-traindata='duts+wmae'
+image_root = './train_data/duts+wmae/img/'
+gt_root = './train_data/duts+wmae/gt/'
 
-image_root = '/train_data/'+traindata+'/img/'
-gt_root = '/train_data/'+traindata+'/gt/'
-
-
-cod_image_root = '/train_data/COD_train/Imgs/'
-cod_gt_root = '/train_data/COD_train/GT/'
+cod_image_root = './train_data/COD_train/Imgs/'
+cod_gt_root = './train_data/COD_train/GT/'
 
 train_loader = get_loader(image_root, gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
 cod_train_loader = get_loader_clipargue_randomselect(cod_image_root, cod_gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
@@ -196,7 +187,7 @@ for i in range(1,opt.train_iters+1):
         x1,x2,x3,x4 = sal_gen.forward(sal_imgs)
         sal_init,sal_ref = share_dec.forward(x1,x2,x3,x4)
 
-        ## train discriminator with sod
+        ## train sod model with discriminator
         dis1_input = torch.sigmoid(sal_init)
         dis2_input = torch.sigmoid(sal_ref)
         Dis_out1_1 = F.upsample(torch.sigmoid(dis_model_sod.forward(sal_imgs,dis1_input)),
@@ -221,7 +212,7 @@ for i in range(1,opt.train_iters+1):
 
 
         dis_optimizer_sod.zero_grad()
-        # ## train descriptor
+        ### train discriminator
         sal_init = sal_init.detach()
         sal_ref = sal_ref.detach()
         dis3_input = torch.sigmoid(sal_init)
@@ -267,7 +258,7 @@ for i in range(1,opt.train_iters+1):
         cod_init, cod_ref = share_dec.forward(x1,x2,x3,x4)
 
 
-        ## train discriminator with sod
+        ## train cod model with discriminator 
         dis1_input = torch.sigmoid(cod_init)
         dis2_input = torch.sigmoid(cod_ref)
         Dis_out1_1_cod = F.upsample(torch.sigmoid(dis_model_cod.forward(cod_imgs,dis1_input)),
@@ -293,7 +284,7 @@ for i in range(1,opt.train_iters+1):
         
 
         dis_optimizer_cod.zero_grad()
-        # ## train descriptor
+        ### train discriminator
         cod_init = cod_init.detach()
         cod_ref = cod_ref.detach()
         dis3_input_cod = torch.sigmoid(cod_init)
