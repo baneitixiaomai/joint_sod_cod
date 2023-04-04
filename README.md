@@ -9,8 +9,9 @@
   - 'duts+wmae' means the augmented SOD training set  
   - 'COD_train'  means the COD training dataset  
   - 'JPEGImages_select' means the selected PASCAL VOC dataset  
-- Run train.py   
-
+```ruby
+Run train.py  
+```
 ##  Test and Evaluate Model
 - Prepare data for testing (We provided the related SOD and COD test image and ground-truth in:[[Google_Drive]](https://drive.google.com/drive/folders/1-yRpkCm2d7qKjW01tGCfmbHL5zqMeBI1). Please download it and put it in the '/test_data/' folder)  
 
