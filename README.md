@@ -2,8 +2,9 @@
 
 ![](https://github.com/baneitixiaomai/joint_sod_cod/blob/master/overview.png)  
 ## Set up
-- pip install -r requirements.txt  
-
+```ruby
+pip install -r requirements.txt  
+```
 ## Train Model
 - Prepare data for training (We provided the related data in:[[Google_Drive]](https://drive.google.com/drive/folders/1J_B7mNEwB0ryzngd8JyZdllfFNgkiFdh?usp=sharing). Please download it and put it in the '/train_data/' folder)   
   - 'duts+wmae' means the augmented SOD training set  
