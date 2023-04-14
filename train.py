@@ -21,9 +21,9 @@ parser.add_argument('--trainsize', type=int, default=352, help='training dataset
 parser.add_argument('--beta1_gen', type=float, default=0.5,help='beta of Adam for generator')
 parser.add_argument('--beta1_dis', type=float, default=0.5,help='beta of Adam for descriptor')
 parser.add_argument('--reduced_dim', type=int, default=32, help='reduced dimension size')
-parser.add_argument('--cos_weight', type=float, default=5, help='weight of the cosine loss')
+parser.add_argument('--cos_weight', type=float, default=0.1, help='weight of the cosine loss')
 parser.add_argument('--beta_feat', type=float, default=0.5,help='beta of Adam for generator')
-parser.add_argument('--latent_fq', type=int, default=1, help='contrastive learning latent frequency')  
+parser.add_argument('--latent_fq', type=int, default=5, help='contrastive learning latent frequency')  
 parser.add_argument('--sadw', type=float, default=1.0, help='adversial learning sod weigth')  
 parser.add_argument('--cadw', type=float, default=1.0, help='adversial learning cod weigth')  
 
